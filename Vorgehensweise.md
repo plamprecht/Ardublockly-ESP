@@ -36,14 +36,17 @@ Info über Code Bedeutung: https://developers.google.com/blockly/guides/create-c
 
 WIFI Block:
 - Connect to WIFI https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#tks793
-- Eigenen WIFI Access Point starten: Kein Multithreading, daher nur 1:1 Peer-to-Peer Verbindung möglich, daher nicht sinnvoll für MQTT Netwerk mit Broker + Subscribers etc.
+- Eigenen WIFI Access Point starten: Kein Multithreading, daher nur 1:1 Peer-to-Peer Verbindung möglich, daher 
+
+nicht sinnvoll für MQTT Netwerk mit Broker + Subscribers etc.
 - Start WIFI AccessPoint https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#73tuha
 	https://circuits4you.com/2019/01/05/connecting-esp32-to-wifi-network/
 	https://randomnerdtutorials.com/esp32-access-point-ap-web-server/
+	https://www.esp8266.com/viewtopic.php?f=6&t=15349	
 
 MQTT: https://techtutorialsx.com/2017/04/24/esp32-publishing-messages-to-mqtt-topic/
 https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/
-- Connect https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#usf2cg
+- Connect https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#bpc4ac
 - Publish (FINAL mit Variablen) https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#o6n57q
 - Subscribe:
 -- MQTT Subscribe Function: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#bevtot
@@ -61,7 +64,9 @@ Server Send: https://blockly-demo.appspot.com/static/demos/blockfactory/index.ht
 BME280 / BMP280:
 Initialize: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#tay3jk
 Measuring: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#3f8ppd
-Anmerkung: Man könnte auch HÖHE anhand von Luftdruck berechnen und ausgeben - bewusst nicht, da Berechnungen selbst durch Blöcke gemacht werden können. (z.B. als Funktion)
+Anmerkung: Man könnte auch HÖHE anhand von Luftdruck berechnen und ausgeben - bewusst nicht, da Berechnungen 
+
+selbst durch Blöcke gemacht werden können. (z.B. als Funktion)
 
 I2C Scanner:
 Block: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#6t9orw
@@ -76,30 +81,27 @@ PWM_to_pin: https://blockly-demo.appspot.com/static/demos/blockfactory/index.htm
 PWM_set_dutycycle: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#hg6c8y
 
 String Compare:
-https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#7mz5nq
+https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#9jgya9
 
 Text cut Delimiter: 
 Initialize + First Part: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#gpphsu
 Next: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#nrb2b7
 
-EEPROM
+EEPROM:
+https://randomnerdtutorials.com/esp32-flash-memory/
 Write: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#roeyeh
 Read: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#mx6g5y
 
 OLED Display:
+https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/
+Display Initialize: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#gy5hvc
 Display Text: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ohsm8q
 Display Clear: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#mcs58p
 
 
-Build Version + EXE File erstellen - Ardublockly kompilieren: https://github.com/carlosperate/ardublockly/wiki/Building-Ardublockly#download-the-source-code
+Build Version + EXE File erstellen - Ardublockly kompilieren: 
 
-
-## ========== Neue Code Generierungs Funktion =============
-
-\\192.168.1.2\usb hdd\Studium\8. Semester\Bachelorarbeit Informatik\Ardublockly\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\blockly\generators\arduino.js
-
-Problem besteht wenn man das Ergebnis eines Statement Inputs an 2 verschiedene Stellen schreiben will. z.B. einmal an den Ort wo der Statement Input steht UND einen Teil in die Loop Funktion (Main Programm). Das ging bisher nicht, da es keine Funktion gab wie addSetup / addFunction für die Loop Funktion. Code wird an den Anfang der Loop geschreiben.
-
+https://github.com/carlosperate/ardublockly/wiki/Building-Ardublockly#download-the-source-code
 
 ## ============ MQTT Test ===================
 
