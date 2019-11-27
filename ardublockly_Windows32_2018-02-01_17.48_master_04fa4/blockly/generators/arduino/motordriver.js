@@ -56,6 +56,7 @@ Blockly.Arduino['l298n_setup'] = function(block) {
 Blockly.Arduino['l298n_move'] = function(block) {
   var motor_select = block.getFieldValue('motor_select');
   var movement = block.getFieldValue('movement');
+  var code = '';
   
   if(motor_select == "MotorA")
   {
@@ -100,5 +101,5 @@ Blockly.Arduino['l298n_move'] = function(block) {
 	  }
   }
   
-  return '';
+  return code;
 };
