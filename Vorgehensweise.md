@@ -32,7 +32,7 @@ https://github.com/carlosperate/ardublockly/wiki/Create-Blocks
 https://blockly-demo.appspot.com/static/demos/blockfactory/index.html
 Info über Code Bedeutung: https://developers.google.com/blockly/guides/create-custom-blocks/define-blocks
 
-## ============ Meine Blöcke ===================
+## ============ Neue Blöcke ===================
 
 WIFI Block:
 - Connect to WIFI https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#tks793
