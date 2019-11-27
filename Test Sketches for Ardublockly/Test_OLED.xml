@@ -1,0 +1,82 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="9!W]z(Q=xv)P+9|WH8rM" x="43" y="132">
+    <field name="VAR">item</field>
+    <value name="VALUE">
+      <block type="text" id="`?M|;P#pMu/%)jq;PCFf">
+        <field name="TEXT">Zeile 2</field>
+      </block>
+    </value>
+    <next>
+      <block type="oled_display_text" id="zhD4Q49,TFNQ+c,?FeqL">
+        <field name="font_size">10</field>
+        <value name="text_to_display">
+          <block type="text" id="gPaurmWu]10euxq]b8ju">
+            <field name="TEXT">test 123</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_display_text" id="%qtJ{alE{46!5%H!;P-.">
+            <field name="font_size">16</field>
+            <value name="text_to_display">
+              <block type="variables_get" id="8wrY,bD/An1=jfb4G1L%">
+                <field name="VAR">item</field>
+              </block>
+            </value>
+            <next>
+              <block type="time_delay" id="pFK3MBv87e}9%^`:L?SE">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="tOKL)R1L|A,jd53Qmt3R">
+                    <field name="NUM">5000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_display_clear" id="~@S94j:i6lPlGeAjr6n0">
+                    <next>
+                      <block type="oled_display_text" id="%0y?JB..[Lw6leRklrO~">
+                        <field name="font_size">24</field>
+                        <value name="text_to_display">
+                          <block type="text" id="+3B]N#:2iHHmZ?,F)yh?">
+                            <field name="TEXT">NEU</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_display_text" id="S;+4*xi!(3v@g6-dWrvE">
+                            <field name="font_size">16</field>
+                            <value name="text_to_display">
+                              <block type="text" id=");5_7q^7a@neBA_}Nm(J">
+                                <field name="TEXT">groß</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_display_text" id="fU8FVM1CoqyWA@6Eun#M">
+                                <field name="font_size">10</field>
+                                <value name="text_to_display">
+                                  <block type="text" id="@Z!WIB`f2QiWMII/cTIy">
+                                    <field name="TEXT">sehr klein</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="time_delay" id="lhd`8MSP+L(D4;.Ji[fm">
+                                    <value name="DELAY_TIME_MILI">
+                                      <block type="math_number" id="=vC=~1}OHS~{Y20b2(dC">
+                                        <field name="NUM">5000</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

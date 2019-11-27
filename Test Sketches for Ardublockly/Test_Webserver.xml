@@ -1,0 +1,182 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="O/6~q!,g=dh!)5-Bz)2(" x="51" y="166">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">115200</field>
+  </block>
+  <block type="variables_set" id="KK=6w!3mQG_~F3_DA?]4" x="50" y="205">
+    <field name="VAR">html_style_and_basic_page</field>
+    <value name="VALUE">
+      <block type="text" id="K3(7/d}G}#Ne^%_2Eo@M">
+        <field name="TEXT">&lt;!DOCTYPE html&gt; &lt;html&gt;\n &lt;head&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"&gt;\n &lt;title&gt;ESP32 Web Server&lt;/title&gt;\n &lt;style&gt;html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;} h3 {color: #444444;margin-bottom: 50px;}\n .button {display: block;width: 80px;background-color: #3498db;border: none;color: white;padding: 13px 30px;text-  decoration: none;font-size: 25px;margin: 0px auto 35px;cursor: pointer;border-radius: 4px;}\n .button-on {background-color: #3498db;}\n .button-on:active {background-color: #2980b9;}\n .button-off {background-color: #34495e;}\n .button-off:active {background-color: #2c3e50;}\n p {font-size: 14px;color: #888;margin-bottom: 10px;}\n &lt;/style&gt;\n &lt;/head&gt;\n &lt;body&gt;\n &lt;h1&gt;ESP32 Web Server&lt;/h1&gt;\n</field>
+      </block>
+    </value>
+    <next>
+      <block type="connect_to_wlan" id="CV8!?BIh1m;t=_L-UY)+">
+        <field name="SSID">Patricks Network</field>
+        <field name="Key">wlan@pati</field>
+        <next>
+          <block type="webserver_start" id="%EN^r,ZNXPoDae=^Nqx4">
+            <field name="Webserver Port">8000</field>
+            <statement name="Webserver_blocks">
+              <block type="handle_url_notfound" id="dAluHi^4_wx*QC*PRPnj">
+                <statement name="Handle_URL_notfound_blocks">
+                  <block type="serial_print" id="qSGuYMN#EPKPlXDYEWAY">
+                    <field name="SERIAL_ID">Serial</field>
+                    <field name="NEW_LINE">TRUE</field>
+                    <value name="CONTENT">
+                      <block type="text" id=".BQeDzdC^M!LK]~xd`sC">
+                        <field name="TEXT">Opened a Page not found</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="server_send" id="IQo}?,8YCAL;hkxY~Iei">
+                        <field name="statecode">404</field>
+                        <field name="content_type">text/html</field>
+                        <value name="server_send_content">
+                          <block type="text_join" id="D`~WUA0o/Te(j{He?D.:">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="variables_get" id="All-y8+BA:=N25vo`mT_">
+                                <field name="VAR">html_style_and_basic_page</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="text" id="=LG1/IKd|v~]q4EzEW`f">
+                                <field name="TEXT">&lt;p&gt;PAGE not found! :-(&lt;/body&gt;&lt;/html&gt;</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="handle_url" id="GsE*.^W7:ftkmg2|gRf]">
+                    <field name="Page"></field>
+                    <statement name="Handle_URL_blocks">
+                      <block type="serial_print" id="j.cPJLiu{jA.Sin@fT0b">
+                        <field name="SERIAL_ID">Serial</field>
+                        <field name="NEW_LINE">TRUE</field>
+                        <value name="CONTENT">
+                          <block type="text" id="jxZ-592CWKm~1nQlD{}y">
+                            <field name="TEXT">Opened Webserver Default Page</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="server_send" id="GyzM8TlwD,a}4,#7UcFo">
+                            <field name="statecode">200</field>
+                            <field name="content_type">text/html</field>
+                            <value name="server_send_content">
+                              <block type="text_join" id="|A%9LP|5];gS4V`pryIe">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="variables_get" id="JOp~h={*z#1HO1Im:Sh~">
+                                    <field name="VAR">html_style_and_basic_page</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="w6/sGaV41[o6M1%N+h[X">
+                                    <field name="TEXT">&lt;p&gt;Opened DEFAULT Page&lt;/body&gt;&lt;/html&gt;</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="handle_url_with_authentication" id="4GGwC]+-hN@h_)LXjklG">
+                        <field name="Page">led/on</field>
+                        <statement name="Handle_URL_blocks">
+                          <block type="serial_print" id="w1Da@RaU~qjX6-5HmR*%">
+                            <field name="SERIAL_ID">Serial</field>
+                            <field name="NEW_LINE">TRUE</field>
+                            <value name="CONTENT">
+                              <block type="text" id="qUkuOznKR)szAH0Fd40q">
+                                <field name="TEXT">Opened LED / ON</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="server_send" id="X.=g;+N)Gqx?effomSFH">
+                                <field name="statecode">200</field>
+                                <field name="content_type">text/html</field>
+                                <value name="server_send_content">
+                                  <block type="text_join" id="jJ*dUx9Wss!Q6[WMSiJw">
+                                    <mutation items="2"></mutation>
+                                    <value name="ADD0">
+                                      <block type="variables_get" id="cNeNb5h`.(/;WW9HD%4Z">
+                                        <field name="VAR">html_style_and_basic_page</field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="text" id="6gx*AREhTB~!p#+~u/.?">
+                                        <field name="TEXT">&lt;p&gt;Opened LED / ON&lt;/body&gt;&lt;/html&gt;</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <value name="Username">
+                          <block type="text" id="d8To.mON4Z!jyHGtc3G9">
+                            <field name="TEXT">root</field>
+                          </block>
+                        </value>
+                        <value name="Password">
+                          <block type="text" id="P#NSfeY:vG7v4SkbCYc2">
+                            <field name="TEXT">password</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="handle_url" id="j}RBA_=veG;Ql1GEQuGN">
+                            <field name="Page">test</field>
+                            <statement name="Handle_URL_blocks">
+                              <block type="serial_print" id="bhAj({.s~r25LwA2,B:8">
+                                <field name="SERIAL_ID">Serial</field>
+                                <field name="NEW_LINE">TRUE</field>
+                                <value name="CONTENT">
+                                  <block type="text" id="48n?DRLmgU%{+M]U8^hY">
+                                    <field name="TEXT">Opened test</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="server_send" id="PYHj81%N7_VN]pZpGo76">
+                                    <field name="statecode">200</field>
+                                    <field name="content_type">text/html</field>
+                                    <value name="server_send_content">
+                                      <block type="text_join" id=".lv(!Wid|qxO{XKAbM,O">
+                                        <mutation items="2"></mutation>
+                                        <value name="ADD0">
+                                          <block type="variables_get" id="r^N!Nr#XkZ/?Ep.W0[-%">
+                                            <field name="VAR">html_style_and_basic_page</field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block type="text" id="7sP68f%F*w7q{^1,1L2N">
+                                            <field name="TEXT">&lt;p&gt;Opened TEST Page&lt;/body&gt;&lt;/html&gt;</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

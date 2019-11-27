@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="[;XXO(@B;DUV1n[G+%cC" x="43" y="133">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">115200</field>
+    <next>
+      <block type="variables_set" id="OaB~/*KV@/e21?,f[#10">
+        <field name="VAR">item</field>
+        <value name="VALUE">
+          <block type="text" id="OFVi*0aCoNZ}4Q`J#V2*">
+            <field name="TEXT">Test-Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="eeprom_write" id="P-p)j~vQ#{YzHyg[sO{=">
+            <value name="string_to_write">
+              <block type="variables_get" id="_nJu13w%a{pZT8],JS7j">
+                <field name="VAR">item</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="g:;R.+r0tlr6]RS2(vOG">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">FALSE</field>
+                <value name="CONTENT">
+                  <block type="text" id="eC]EH4Cbp1Bg66;8bS)m">
+                    <field name="TEXT">Read from EEPROM: </field>
+                  </block>
+                </value>
+                <next>
+                  <block type="serial_print" id="F45-5*v6:I7Z%,*~8s[/">
+                    <field name="SERIAL_ID">Serial</field>
+                    <field name="NEW_LINE">TRUE</field>
+                    <value name="CONTENT">
+                      <block type="eeprom_read" id="HXVe?~a4I}mBmr9nQvS`"></block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
