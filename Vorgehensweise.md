@@ -33,12 +33,9 @@ https://blockly-demo.appspot.com/static/demos/blockfactory/index.html
 Info über Code Bedeutung: https://developers.google.com/blockly/guides/create-custom-blocks/define-blocks
 
 ## ============ Neue Blöcke ===================
-
 WIFI Block:
 - Connect to WIFI https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#tks793
-- Eigenen WIFI Access Point starten: Kein Multithreading, daher nur 1:1 Peer-to-Peer Verbindung möglich, daher 
-
-nicht sinnvoll für MQTT Netwerk mit Broker + Subscribers etc.
+- Eigenen WIFI Access Point starten: Kein Multithreading, daher nur 1:1 Peer-to-Peer Verbindung möglich, daher nicht sinnvoll für MQTT Netwerk mit Broker + Subscribers etc.
 - Start WIFI AccessPoint https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#73tuha
 	https://circuits4you.com/2019/01/05/connecting-esp32-to-wifi-network/
 	https://randomnerdtutorials.com/esp32-access-point-ap-web-server/
@@ -47,10 +44,12 @@ nicht sinnvoll für MQTT Netwerk mit Broker + Subscribers etc.
 MQTT: https://techtutorialsx.com/2017/04/24/esp32-publishing-messages-to-mqtt-topic/
 https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/
 - Connect https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#bpc4ac
+	v2 https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ee8b7r
 - Publish (FINAL mit Variablen) https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#o6n57q
 - Subscribe:
 -- MQTT Subscribe Function: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#bevtot
 -- MQTT Subscribe: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#rsbkfu
+-- MQTT Subscribe Get Content: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ekiz2e
 
 Webserver:
 https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/
@@ -64,15 +63,13 @@ Server Send: https://blockly-demo.appspot.com/static/demos/blockfactory/index.ht
 BME280 / BMP280:
 Initialize: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#tay3jk
 Measuring: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#3f8ppd
-Anmerkung: Man könnte auch HÖHE anhand von Luftdruck berechnen und ausgeben - bewusst nicht, da Berechnungen 
-
-selbst durch Blöcke gemacht werden können. (z.B. als Funktion)
+Anmerkung: Man könnte auch HÖHE anhand von Luftdruck berechnen und ausgeben - bewusst nicht, da Berechnungen selbst durch Blöcke gemacht werden können. (z.B. als Funktion)
 
 I2C Scanner:
 Block: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#6t9orw
 
 Motor Driver L298N:
-L298N_setup: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ek2d8s
+L298N_setup: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#3jw82g
 L298N_move: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ycoyuh
 
 Pulse Width Modulation:
@@ -98,10 +95,37 @@ Display Initialize: https://blockly-demo.appspot.com/static/demos/blockfactory/i
 Display Text: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#ohsm8q
 Display Clear: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#mcs58p
 
+TFT eSPI Display (eSPI Library):
+Display Initialize: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#q4pf2m
+Fill Color: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#sdeisd
+Text and Background Color: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#wr6p89
+Rotation: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#q2o3cu
+Display Text: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#rt3rda
 
-Build Version + EXE File erstellen - Ardublockly kompilieren: 
+Gyro Sensor MPU-6050:
+http://www.brokking.net/imu.html
 
-https://github.com/carlosperate/ardublockly/wiki/Building-Ardublockly#download-the-source-code
+Sensitivitiy Einstellung: https://github.com/VRomanov89/EEEnthusiast/blob/master/MPU-6050%20Implementation/MPU6050_Implementation/MPU6050_Implementation.ino
+Register Map: https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf
+Datenblatt: https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+Serial Plotter: http://www.toptechboy.com/arduino/9-axis-imu-lesson-4-plotting-serial-data-from-arduino-with-control-of-axis-scale/
+Serial Plotter Download: https://hackaday.io/project/5334-serialplot-realtime-plotting-software
+http://www.toptechboy.com/arduino/9-axis-imu-lesson-10-making-a-tilt-compensated-compass-with-arduino/
+Kalibrieren statisch: https://learn.adafruit.com/adxl345-digital-accelerometer/programming
+Kalibrieren statisch: https://learn.adafruit.com/calibrating-sensors/two-point-calibration
+Roll Pitch Axis Image: https://protosupplies.com/product/mpu-6050-gy-521-3-axis-accel-gryo-sensor-module/
+
+Initialize and Calibrate: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#3oozjv
+Calc Angles: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#b3hevi
+Measure: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#izq5vz
+Store Raw: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#wbu72y
+
+Variables:
+Define: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#jw66y5
+Set: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#q6fpkz
+
+
+Build Version + EXE File erstellen - Ardublockly kompilieren: https://github.com/carlosperate/ardublockly/wiki/Building-Ardublockly#download-the-source-code
 
 ## ============ MQTT Test ===================
 

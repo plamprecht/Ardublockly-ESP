@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="carlosperate">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>To-do List - Ardublockly Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "To-do List";
+    var mkdocs_page_input_path = "To-do-list.md";
+    var mkdocs_page_url = "/To-do-list/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../Home/" class="icon icon-home"> Ardublockly Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Quick-Start/">Quick Start</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Installing-Ardublockly/">Installing Ardublockly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Configure-Ardublockly/">Configure Ardublockly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Arduino-Compiler-Settings/">Arduino Compiler Settings</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">General Blocks</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Logic/">Logic</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-IfElse/">Logic If/Else</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Loops/">Loops</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Math/">Math</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Text/">Text</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Variables/">Variables</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-~-Functions/">Functions</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../FAQs/">FAQs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Known-Arduino-IDE-issues/">Known Arduino IDE issues</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developer Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Building-Ardublockly/">Building Ardublockly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Running-Uncompressed-Ardublockly/">Running Uncompressed Ardublockly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Git-Settings/">Git Settings</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Create Blocks</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-Blocks/">Overview</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../Create-Blocks-~-Extending-Ardublockly/">Extending Ardublockly</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Add-New-Arduino-Board/">Add a New Board</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Add-New-Language/">Add a New Language</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">To-do List</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#ardublockly-to-do-list">Ardublockly To-do List</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#ardublockly-build-system">Ardublockly build system</a></li>
+        
+            <li><a class="toctree-l4" href="#ardublockly-desktop-wrapper">Ardublockly desktop wrapper</a></li>
+        
+            <li><a class="toctree-l4" href="#python-server">Python server</a></li>
+        
+            <li><a class="toctree-l4" href="#ardublockly-front-end">Ardublockly front end</a></li>
+        
+            <li><a class="toctree-l4" href="#blockly">Blockly</a></li>
+        
+            <li><a class="toctree-l4" href="#future-features">Future features</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../About/">About Ardublockly</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../License/">License</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Credits/">Credits</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../Home/">Ardublockly Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Home/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Developer Guide &raquo;</li>
+        
+      
+    
+    <li>To-do List</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="http://github.com/carlosperate/ardublockly/wiki/edit/master/docs/To-do-list.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ardublockly-to-do-list">Ardublockly To-do List</h1>
+<p>This is a list of pending actions and features planned for Ardublockly. This is not to be taken strictly, and a lot of these might just be ideas rather than a roadmap.</p>
+<p>If you would like to contribute to the projects these could be some good areas to look into. It would probably be a good idea to open an issue in the <a href="https://github.com/carlosperate/ardublockly/issues">GitHub issue tracker</a> first to discuss if it's something worth doing and the best approach. </p>
+<h2 id="ardublockly-build-system">Ardublockly build system</h2>
+<ul>
+<li>[ ] Create a single script to run all steps in a single command? (very low priority)</li>
+</ul>
+<h2 id="ardublockly-desktop-wrapper">Ardublockly desktop wrapper</h2>
+<ul>
+<li>[ ] Wait for resolution and implement appData directory move fixes https://github.com/atom/electron/issues/2721</li>
+<li>[ ] Move Electron front end changes script from ardublockly html injection into preload script executed from Electron</li>
+<li>[ ] Add menu to directly select amongst the different Arduino boards supported</li>
+<li>[ ] Executable app signing</li>
+<li>[ ] Check for "built python server executable", if not found check if python is installed, if it is then run the server in a python sub-process.</li>
+</ul>
+<h2 id="python-server">Python server</h2>
+<ul>
+<li>[ ] Complete <code>compilerserttings</code> module unit test</li>
+<li>[ ] Complete <code>actions</code> module unit test module</li>
+<li>[ ] Check for more possible issues with unicode in Python 2</li>
+<li>[ ] Experiment with the <code>--preserve-temp-files</code> flag to maintain temporary files and speed up CLI compilation</li>
+<li>[ ] Remove tkinker file/directory selection and implement an html version</li>
+<li>[ ] The server should provide fully "headless" execution</li>
+</ul>
+<h4 id="linux-specific">Linux specific</h4>
+<ul>
+<li>[ ] Test load sketch to board (current test in raspberry pi and ubuntu to load sketches in the IDE) with python 2 and 3</li>
+<li>[ ] Current port list shows all dev/tty, as all Arduinos should be connected by USB this list can be filtered to only show ttyUSBx ports</li>
+</ul>
+<h4 id="mac-os-x-specific">Mac OS X specific</h4>
+<ul>
+<li>[ ] Test load sketch to board with python 2 and 3</li>
+</ul>
+<h4 id="windows-specific">Windows specific</h4>
+<ul>
+<li>[ ] Nothing at the moment</li>
+</ul>
+<h2 id="ardublockly-front-end">Ardublockly front end</h2>
+<ul>
+<li>[ ] Change delete all icon with "new"</li>
+<li>[ ] Similar to Arduino IDE, select area to display button action text, and change the text with button mouse over</li>
+<li>[ ] Ensure that basic empty sketch code shows on page load</li>
+<li>[ ] On low resolutions ensure the blockly vertical height is lower than the viewport</li>
+<li>[ ] Finish Spanish translation</li>
+</ul>
+<h2 id="blockly">Blockly</h2>
+<ul>
+<li>[ ] Merge upstream changes until variables were reworked, ensure everything still works</li>
+<li>[ ] Merge upstream master with latest variable changes</li>
+<li>[ ] Type blocks are coming, ensure Ardublockly is ready</li>
+<li>[ ] Modify zoom icons to be smaller and placed in a different position</li>
+<li>[ ] Arduino setup and loop block can be copy/pasted using keyboard shorcuts, stop this from happening</li>
+<li>[ ] Refactor new variable name to be able to select custom name on single action and asynchronously</li>
+</ul>
+<h4 id="blockly-changes-to-submit-upstream">Blockly changes to submit upstream</h4>
+<ul>
+<li>[ ] Any useful changes to the zoom functionality</li>
+<li>[ ] Use of window.prompt</li>
+</ul>
+<h4 id="static-typing">Static typing</h4>
+<ul>
+<li>[ ] logic_ternary block getType to defines type as that of its inputs</li>
+<li>[ ] logic_null block right now does not return a type, this might change</li>
+<li>[ ] math_number block 'errornumber' type used for debugging, remove</li>
+<li>[ ] math_arithmetic getType to check types of given inputs to decide between int or float. Right now first block within sets the type.</li>
+<li>[ ] math_constrain getType to check types of given inputs to decide between int or float. Right now first block within sets the type.</li>
+<li>[ ] math_number getType to use regular expressions more efficiently</li>
+<li>[ ] math_on_list to add static type if lists get implemented</li>
+<li>[ ] controls_for getVarType function</li>
+<li>[ ] controls_forEach block uses lists, these are not implemented in the Arduino generator (possible arrays), when implemented this block needs a getVarType, varType, and getType functions</li>
+<li>[ ] add getVarType to the procedures blocks</li>
+<li>[ ] the loops count type is set to int, user could input a decimal, so add input checking to determine type</li>
+<li>[ ] Number blocks automatically trim unnecessary decimal digits "x.0 =&gt; x", change this behaviour so that "x.0" can be set as a decimal</li>
+</ul>
+<h4 id="arduino-generator">Arduino generator</h4>
+<ul>
+<li>[ ] Text trim does not currently generate Arduino valid code</li>
+</ul>
+<h4 id="arduino-blocks">Arduino blocks</h4>
+<ul>
+<li>[ ] Code generator for lists into arrays</li>
+<li>[ ] Create I2C communication blocks with hue 190</li>
+<li>[ ] Update the serial print block to specify explicit type (hex, str, int, etc)</li>
+<li>[ ] Look into all the serial functions and decide what else might fit in</li>
+<li>[ ] Allow to add return statement (to exit) inside the Arduino setup()/loop() functions</li>
+</ul>
+<h2 id="future-features">Future features</h2>
+<ul>
+<li>[ ] Server component of the block creator to add files into project directory folder and have client side to read them and include them into the toolbox</li>
+<li>[ ] Serial console for comms with Arduino</li>
+<li>[ ] Serial data graphing</li>
+<li>[ ] SVG image creation to displayed used pins with given function</li>
+<li>[ ] Auto updating desktop application</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../About/" class="btn btn-neutral float-right" title="About Ardublockly">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Add-New-Language/" class="btn btn-neutral" title="Add a New Language"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="http://github.com/carlosperate/ardublockly/wiki/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Add-New-Language/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../About/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
