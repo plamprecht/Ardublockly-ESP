@@ -11,7 +11,6 @@ We encourage you to participate in this Project and develope new blocks on your 
 You can contact us here in the issue-Tab or at info@blockcoding.click
 
 Don't hesitate to visit our Official Website http://www.blockcoding.click
-
 We will soon offer certified Hardward-Sets for your school and blockcoding.click Plug&Play Packages there!
 
 Enjoy the Experience! Sincerely
