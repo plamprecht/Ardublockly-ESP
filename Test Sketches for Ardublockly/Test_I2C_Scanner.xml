@@ -1,7 +1,0 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="serial_setup" id="s#Q]_Y3Kz1OJfKPRtsq%" x="71" y="207">
-    <field name="SERIAL_ID">Serial</field>
-    <field name="SPEED">115200</field>
-  </block>
-  <block type="i2c_scanner" id="rXlj5n9.C~;/pLg|Ee3I" x="74" y="236"></block>
-</xml>
