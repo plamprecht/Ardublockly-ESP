@@ -1,10 +1,17 @@
-# Ardublockly-ESP
-All files which contain any difference to the original files -> copy them into the folder "/Save Modified and Original Ardublockly Files"
+# Blockcoding.click
+Welcome to our page! Blockcoding.click is a Block-coding IDE which is an extension of Ardublockly. Ardublockly itself is based on the Google Blockly Framework.
 
-The Original Ardublockly Version for Linux/Windows can be downloaded here:
-http://ardublockly-builds.s3-website-us-west-2.amazonaws.com/index.html
+On this git page you will find the most recent release of Blockcoding.click as well as 3 manuals to introduce you quickly to the IDE:
+- Quick Start Guide for Teachers (German): https://github.com/pati5000/Ardublockly-ESP/blob/master/Blockcoding.click%20%E2%80%93%20Quick%20Start%20Guide%20f%C3%BCr%20Lehrpersonen.pdf
+- Quick Start Guide for Teachers (English): https://github.com/pati5000/Ardublockly-ESP/blob/master/Blockcoding.click%20%E2%80%93%20Quick%20Start%20Guide%20for%20Teachers.pdf
+- Manual to contribute and implement individual new Blocks: https://github.com/pati5000/Ardublockly-ESP/blob/master/Blockcoding.click%20%E2%80%93%20A%20Guide%20for%20implementing%20new%20Blocks.pdf
 
-Detailled Installation instructions can be found there:
-https://github.com/carlosperate/ardublockly/wiki/Installing-Ardublockly
+We encourage you to participate in this Project and develope new blocks on your own!
 
-For Developers: All important Links with detailled information around the implemented Blocks aswell as the Google Blockfactory Links, the Code Source and Help Links can be found in the kind of raw Developers Documentation at https://github.com/pati5000/Ardublockly-ESP/blob/master/Vorgehensweise.md
+You can contact us here in the issue-Tab or at info@blockcoding.click
+
+Don't hesitate to visit our Official Website http://www.blockcoding.click
+We will soon offer certified Hardward-Sets for your school and blockcoding.click Plug&Play Packages there!
+
+Enjoy the Experience! Sincerely
+Patrick Lamprecht
