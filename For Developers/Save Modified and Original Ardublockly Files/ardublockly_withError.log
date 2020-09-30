@@ -1,0 +1,200 @@
+2019-05-17T11:02:58.089Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2019-05-17T11:02:58.089Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+2019-05-17T11:02:58.089Z - info: [ArdublocklyElec] OS detected: win32
+2019-05-17T11:02:58.136Z - info: [ServerMgr] Command: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\arduexec\server\start.exe --findprojectroot --nobrowser
+2019-05-17T11:02:58.771Z - info: [ArdublocklySrv] Running Python 3.4.4 (32 bit) on Windows-7-6.1.7601-SP1
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Current working directory set to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server root:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server ip:
+	localhost
+Selected server port:
+	8000
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+Settings file Arduino Board does not exist:
+	ESP32 Dev Module
+Default Arduino board type set:
+	Atmel atmega168pb Xplained mini
+Final settings loaded:
+	Compiler directory: C:\Program Files (x86)\Arduino\arduino.exe
+	Arduino Board Key: Atmel atmega168pb Xplained mini
+	Arduino Board Value: atmel:avr:atmega168pb_xplained_mini
+	Serial Port Value: COM3
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+	Load IDE option: open
+Settings file saved to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Launch Server:
+
+2019-05-17T11:07:29.036Z - info: [ServerMgr] Server stopped.
+2019-05-17T11:12:28.240Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2019-05-17T11:12:28.256Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+2019-05-17T11:12:28.256Z - info: [ArdublocklyElec] OS detected: win32
+2019-05-17T11:12:28.287Z - info: [ServerMgr] Command: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\arduexec\server\start.exe --findprojectroot --nobrowser
+2019-05-17T11:12:29.044Z - info: [ArdublocklySrv] Running Python 3.4.4 (32 bit) on Windows-7-6.1.7601-SP1
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Current working directory set to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server root:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server ip:
+	localhost
+Selected server port:
+	8000
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+Settings file Arduino Board does not exist:
+	ESP32 Dev Module
+Default Arduino board type set:
+	Atmel atmega168pb Xplained mini
+Final settings loaded:
+	Compiler directory: C:\Program Files (x86)\Arduino\arduino.exe
+	Arduino Board Key: Atmel atmega168pb Xplained mini
+	Arduino Board Value: atmel:avr:atmega168pb_xplained_mini
+	Serial Port Value: COM3
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+	Load IDE option: open
+Settings file saved to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Launch Server:
+
+2019-05-21T04:42:55.814Z - info: [ServerMgr] Server stopped.
+2019-06-05T11:11:33.398Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2019-06-05T11:11:33.401Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+2019-06-05T11:11:33.401Z - info: [ArdublocklyElec] OS detected: win32
+2019-06-05T11:11:33.511Z - info: [ServerMgr] Command: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\arduexec\server\start.exe --findprojectroot --nobrowser
+2019-06-05T11:11:34.271Z - info: [ArdublocklySrv] Running Python 3.4.4 (32 bit) on Windows-7-6.1.7601-SP1
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Current working directory set to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server root:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server ip:
+	localhost
+Selected server port:
+	8000
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM3
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Program Files (x86)\Arduino\arduino.exe
+	Arduino Board Key: Atmel atmega168pb Xplained mini
+	Arduino Board Value: atmel:avr:atmega168pb_xplained_mini
+	Serial Port Value: None
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+	Load IDE option: open
+Settings file saved to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+
+2019-06-05T11:11:34.273Z - info: [ArdublocklySrv] 
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Launch Server:
+
+2019-06-05T11:14:34.359Z - info: [ArdublocklySrv] Serving on http://Patrick-NB:8000
+Serving on http://Patrick-NB:8000
+There are no available Serial Ports !!!
+Settings file saved to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+
+2019-06-05T11:14:59.075Z - info: [ServerMgr] Server stopped.
+2019-06-05T11:16:50.338Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2019-06-05T11:16:50.338Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+2019-06-05T11:16:50.338Z - info: [ArdublocklyElec] OS detected: win32
+2019-06-05T11:16:50.373Z - info: [ServerMgr] Command: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\arduexec\server\start.exe --findprojectroot --nobrowser
+2019-06-05T11:16:50.960Z - info: [ArdublocklySrv] Running Python 3.4.4 (32 bit) on Windows-7-6.1.7601-SP1
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Current working directory set to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server root:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Selected server ip:
+	localhost
+Selected server port:
+	8000
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+Settings file Arduino Board does not exist:
+	ESP32 Dev Module
+Default Arduino board type set:
+	Atmel atmega168pb Xplained mini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Program Files (x86)\Arduino\arduino.exe
+	Arduino Board Key: Atmel atmega168pb Xplained mini
+	Arduino Board Value: atmel:avr:atmega168pb_xplained_mini
+	Serial Port Value: None
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+	Load IDE option: open
+Settings file saved to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Program Files (x86)\ardublockly_Windows32_2018-02-01_17.48_master_04fa4
+Launch Server:
+
+2019-06-05T11:17:03.796Z - info: [Renderer "http://localhost:8000/blockly/arduino_compressed.js:Blockly.Arduino.Boards.changeBoard():L47"] Tried to set non-existing Arduino board: esp32_dev_module
+2019-06-05T11:17:22.037Z - info: [ServerMgr] Server stopped.

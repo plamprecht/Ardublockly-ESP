@@ -1,0 +1,142 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="Ixd;%L4eNly4vQ0+ng%~" x="21" y="41">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">115200</field>
+  </block>
+  <block type="variables_set" id="Nh#J4ms?c_MgQh{kHxy@" x="21" y="65">
+    <field name="VAR">temperature</field>
+    <value name="VALUE">
+      <block type="math_number" id="Si@`pCkLVGcDF1gLMVSM">
+        <field name="NUM">0.01</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="7P8{95,(ibX6)hhj;q_W">
+        <field name="VAR">humidity</field>
+        <value name="VALUE">
+          <block type="math_number" id="UIK=Fe2-bcxm1-Y{j|s_">
+            <field name="NUM">0.01</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="6{tv7:f)8{J*X!o-Y:[{">
+            <field name="VAR">pressure</field>
+            <value name="VALUE">
+              <block type="math_number" id="DAw8;kXBF:9*G/{@l!R_">
+                <field name="NUM">0.01</field>
+              </block>
+            </value>
+            <next>
+              <block type="bme280_initialize" id="vbW?fczvB_UG0wskq[M3">
+                <next>
+                  <block type="bme280_measure" id="4g[o^g+L.k2{Apb:ZwK4">
+                    <field name="Temp_unit">Fahrenheit</field>
+                    <field name="Press_unit">Pa</field>
+                    <value name="temperature">
+                      <block type="variables_get" id="ctVW^q:C*t;2{2!0NG5z">
+                        <field name="VAR">temperature</field>
+                      </block>
+                    </value>
+                    <value name="humidity">
+                      <block type="variables_get" id="psU8hb/4O/xsfOgV!aMG">
+                        <field name="VAR">humidity</field>
+                      </block>
+                    </value>
+                    <value name="pressure">
+                      <block type="variables_get" id="vRuj4z6wi[LgN;p=id}B">
+                        <field name="VAR">pressure</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="serial_print" id="SX^9c*MScTZ|%d{Ur-Vs">
+                        <field name="SERIAL_ID">Serial</field>
+                        <field name="NEW_LINE">TRUE</field>
+                        <value name="CONTENT">
+                          <block type="text_join" id="#|,GInqPxshRQ+rGy@-E">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="text" id="?n/Y|jMz.5IG)ns_-{n:">
+                                <field name="TEXT">Temperatur: </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="variables_get" id="PO5W7-S7e^,u?PR2JT#E">
+                                <field name="VAR">temperature</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="serial_print" id="5fiq/KR;ie{Kcj`fkfs{">
+                            <field name="SERIAL_ID">Serial</field>
+                            <field name="NEW_LINE">TRUE</field>
+                            <value name="CONTENT">
+                              <block type="text_join" id="C!vMj3i`RjI0||Y6CYMC">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="Q]+)!)]ZCF:Au+7h*u:r">
+                                    <field name="TEXT">Humidity: </field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="variables_get" id="+mQ8v!Xs]mLB-HHRd9]I">
+                                    <field name="VAR">humidity</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="serial_print" id="_#m6MN`mAy%^lT_Q}O/b">
+                                <field name="SERIAL_ID">Serial</field>
+                                <field name="NEW_LINE">TRUE</field>
+                                <value name="CONTENT">
+                                  <block type="text_join" id=":O2Kh,^F.+i*cR@|P5|?">
+                                    <mutation items="2"></mutation>
+                                    <value name="ADD0">
+                                      <block type="text" id="^yLWjWIjSi1L?LetB{g1">
+                                        <field name="TEXT">Luftdruck: </field>
+                                      </block>
+                                    </value>
+                                    <value name="ADD1">
+                                      <block type="variables_get" id="tVMae,}QYGCI2G~uk;GL">
+                                        <field name="VAR">pressure</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="serial_print" id="7V;cZ**=b``Y%A?225p*">
+                                    <field name="SERIAL_ID">Serial</field>
+                                    <field name="NEW_LINE">TRUE</field>
+                                    <value name="CONTENT">
+                                      <block type="text" id="R?95-du_9k`mks?jbKZv">
+                                        <field name="TEXT"></field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="time_delay" id="K3bR1RWNib3LIo!F8teQ">
+                                        <value name="DELAY_TIME_MILI">
+                                          <block type="math_number" id="G*gut_!FU`E=~.;azZ4-">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

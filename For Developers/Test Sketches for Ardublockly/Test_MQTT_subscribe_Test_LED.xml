@@ -1,0 +1,138 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="e:)oK2Dg2+T0C5uR{cn`" x="78" y="148">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">115200</field>
+  </block>
+  <block type="connect_to_wlan" id="_?0bmbQE/p+vrEnr]wNB" x="78" y="180">
+    <field name="SSID">Patricks Network</field>
+    <field name="Key">wlan@pati</field>
+    <next>
+      <block type="mqtt_server_connect" id="j{h|[:z!Z[wOaj+HJ?0[">
+        <field name="MQTT Server">192.168.1.19</field>
+        <field name="MQTT Server Port">1883</field>
+        <field name="MQTT Client name">ESP32</field>
+        <field name="MQTT User"></field>
+        <field name="MQTT Password"></field>
+        <next>
+          <block type="mqtt_subscribe_function" id="bI-!8w3Gn]p:#{!(JYMi">
+            <statement name="MQTT_Subscribe_Blocks">
+              <block type="mqtt_subscribe" id="Z]d5yP)0G0HuI~Qt4IX^">
+                <value name="MQTT_topic">
+                  <block type="text" id="BmdesO#y@?}O=wKHDLh=">
+                    <field name="TEXT">esp32-test</field>
+                  </block>
+                </value>
+                <statement name="MQTT_topic_actions">
+                  <block type="serial_print" id="XpX-/(k1yw/LOPg[vK[.">
+                    <field name="SERIAL_ID">Serial</field>
+                    <field name="NEW_LINE">TRUE</field>
+                    <value name="CONTENT">
+                      <block type="text_join" id="(Gx6.jtd+]`yF8r?n{R1">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="Hx-MZ8?_)vgHRxGnKtG9">
+                            <field name="TEXT">esp32-test: </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="a0o,[Qx!wfjr[aj|Q=,;">
+                            <field name="VAR">message</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="mqtt_subscribe" id="5!O/U#etKd6qT^3HGSd-">
+                    <value name="MQTT_topic">
+                      <block type="text" id="ca.Z.:R+cyq-M~kwssIb">
+                        <field name="TEXT">esp32-led</field>
+                      </block>
+                    </value>
+                    <statement name="MQTT_topic_actions">
+                      <block type="serial_print" id="IvhltJm~gg7(v|^Z2uu+">
+                        <field name="SERIAL_ID">Serial</field>
+                        <field name="NEW_LINE">TRUE</field>
+                        <value name="CONTENT">
+                          <block type="text_join" id="UmW-i8@9T1=s:u/-EX=y">
+                            <mutation items="2"></mutation>
+                            <value name="ADD0">
+                              <block type="text" id="2U{/|MFj_M;WD^rbyy1z">
+                                <field name="TEXT">esp32-led: </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="variables_get" id="ZuGvLR;?{RI:U.oGLfb:">
+                                <field name="VAR">message</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="maymGB0Q].u(Dsv;3|hp">
+                            <mutation elseif="1"></mutation>
+                            <value name="IF0">
+                              <block type="text_compare" id="3p1Z`cA,=2l*o]@d,05p">
+                                <field name="comparison">== 0</field>
+                                <value name="string_a">
+                                  <block type="variables_get" id="hLn^T0!oaIjLv4UnpZU2">
+                                    <field name="VAR">message</field>
+                                  </block>
+                                </value>
+                                <value name="string_b">
+                                  <block type="text" id="/c(Z@uE[XFOd0{GxZ;5D">
+                                    <field name="TEXT">on</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="io_digitalwrite" id="q3eVlS`1-Q08p/(RO;O_">
+                                <field name="PIN">19</field>
+                                <value name="STATE">
+                                  <block type="io_highlow" id="Yz_S4%H-Z:k9|vFAG,~1">
+                                    <field name="STATE">HIGH</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="text_compare" id="3i9B|195t`x1/~|_B7%o">
+                                <field name="comparison">== 0</field>
+                                <value name="string_a">
+                                  <block type="variables_get" id="f0RX#1F1Hkz^O9FLyAG!">
+                                    <field name="VAR">message</field>
+                                  </block>
+                                </value>
+                                <value name="string_b">
+                                  <block type="text" id="zWpOVHhVf(n8.F1=Y^+n">
+                                    <field name="TEXT">off</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="io_digitalwrite" id="=*)SrNBBUG^{=CzI2xM|">
+                                <field name="PIN">19</field>
+                                <value name="STATE">
+                                  <block type="io_highlow" id="A~z^hvFVZB)yv:SR*#BN">
+                                    <field name="STATE">LOW</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
