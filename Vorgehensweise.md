@@ -1,15 +1,3 @@
-﻿## ============ Arduino IDE installieren ===================
-
-https://www.arduino.cc/en/Main/Software
-
-ESP32 hinzufügen
-
-OLED Library hinzufügen  
-
-Ardublockly installieren
-https://github.com/carlosperate/ardublockly/wiki/Installing-Ardublockly
-
-
 ## ============ Board ===================
 
 Neues Board in Ardublockly hinzufügen
